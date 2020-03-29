@@ -1,14 +1,17 @@
 const connection = require('../database/connection');
 
 module.exports = {
-    async index(request,response) {
+    async index(request,response) 
+    {
         const incidents = await connection('incidents').select('*');
 
         return response.json(incidents);
     },
     
-    async create(request,response) {
-        const { 
+    async create(request,response) 
+    {
+        const 
+        { 
             title, 
             description, 
             value 
@@ -25,7 +28,8 @@ module.exports = {
         return response.json({id});
     },
 
-    async delete(request,response){
+    async delete(request,response)
+    {
         const { id } = request.params;
         const ong_id = request.headers.authorization;
 
