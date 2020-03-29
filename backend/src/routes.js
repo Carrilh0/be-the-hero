@@ -1,9 +1,8 @@
 const express = require('express');
-const app = express();
 
-app.use(express.json());
+const routes = express.Router();
 
-app.get('/Hello', (request, response) => {
+routes.get('/Hello', (request, response) => {
 
     return response.json({
         evento: 'Semana omnistack',
@@ -11,4 +10,4 @@ app.get('/Hello', (request, response) => {
     });
 });
 
-app.listen(3333);
+module.exports = routes;
