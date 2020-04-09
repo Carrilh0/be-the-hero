@@ -1,0 +1,9 @@
+/backend/node_modules
+/backend/package-lock.json
+/frontend/node_modules
+/frontend/build
+/frontend/package-lock.json
+/backend/src/database/db.sqlite
+/mobile/node_modules
+/mobile/package-lock.json
+/mobile/.expo
